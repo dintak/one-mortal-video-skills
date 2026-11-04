@@ -1,0 +1,14 @@
+{
+  "title": "範例場景",
+  "room": { "width": 8, "height": 5, "unit": "m" },
+  "objects": [
+    { "label": "工作台", "x": 4, "y": 2.5, "width": 2, "height": 0.8 }
+  ],
+  "actors": [
+    { "label": "甲", "x": 2, "y": 3.5 },
+    { "label": "乙", "x": 6, "y": 3.5 }
+  ],
+  "cameras": [
+    { "label": "C1", "x": 4, "y": 4.7, "target_x": 4, "target_y": 2.5 }
+  ]
+}

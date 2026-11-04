@@ -1,0 +1,16 @@
+{
+  "title": "雙人對決",
+  "canvas": {"width": 1920, "height": 1080, "fps": 24},
+  "shots": [
+    {"id": "A01", "duration": 10, "image": "assets/performer-a.png", "motion": "push"},
+    {"id": "B01", "duration": 10, "image": "assets/performer-b.png", "motion": "push"}
+  ],
+  "audio": [
+    {"file": "assets/performer-a.wav", "start": 0, "duration": 10},
+    {"file": "assets/performer-b.wav", "start": 10, "duration": 10}
+  ],
+  "subtitles": [
+    {"start": 0, "end": 2, "text": "A 的第一句"},
+    {"start": 10, "end": 12, "text": "B 的第一句"}
+  ]
+}

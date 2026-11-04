@@ -17,6 +17,15 @@ description: 把已核准的劇本、鏡表、畫面與聲音組成可播放影�
 4. 檢查影片時長、解析度、幀率、音軌、字幕時間、黑畫面或空白段。抽看開頭、轉折、結尾及每個素材替換處，並播放有疑慮的片段。
 5. 將成片、字幕、素材清單和已知限制放在同一交付資料夾。只有使用者要求公開發布時才操作平台，發布對象和可見度遵照當次指示。
 
+## 隨技能附的工具
+
+- [專案格式](references/project-format.md)與 [空白範例](templates/project.json)：短劇和饒舌影片共用一份鏡頭、音軌與字幕時間軸。
+- `scripts/render.py`：用 FFmpeg 從圖片或片段、音檔與字幕輸出 MP4 和 SRT。
+- `scripts/review.py`：檢查片長、音畫格式與字幕時間，產生逐鏡接觸表。
+- `scripts/make_demo.py`：建立不含第三方素材的測試專案；`scripts/tts_windows.ps1` 可在 Windows 產生簡單旁白 WAV。
+
+先用 `python scripts/make_demo.py --out <資料夾>` 驗證環境，再以 `python scripts/render.py <資料夾>/project.json --out <輸出資料夾>` 製作自己的片。用 `python scripts/review.py <資料夾>/project.json <輸出資料夾>/film.mp4 --out <檢查資料夾>` 自審。要在 Colab 跑 CPU 剪接，讀 [Colab 操作](references/colab.md)。影像、歌曲或 H3 等生成服務由使用者已授權的工具提供，這些腳本負責整理和輸出，不包含模型權重。
+
 ## 交付
 
 提供可播放影片、字幕檔和簡短檢查結果。缺少生成服務時，說明交付的是動態分鏡還是完整人物表演；未完成的項目應逐一列出，不把試映稱為最終成片。

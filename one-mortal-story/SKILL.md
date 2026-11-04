@@ -17,6 +17,8 @@ description: 將使用者提供的故事或構想改寫成可拍攝的短劇劇�
 4. 需要製片時，補一份鏡頭清單：鏡號、預估秒數、畫面、動作、聲音、字幕或旁白。鏡頭總長須等於目標片長。
 5. 朗讀台詞並檢查鏡頭時間；標記讀音、畫面連續性和仍需素材的地方。使用者指出偏離原作時，優先修正具體偏差。
 
+需要交給剪接工具時，照 [鏡頭與字幕格式](references/storyboard-handoff.md) 寫出鏡頭、聲音與字幕資料。要做無配音試映，複製 [storyboard.json 範例](templates/storyboard.json)，填好鏡號、秒數、場景、動作和台詞，執行 `python scripts/make_storyboard.py storyboard.json --out <工作資料夾>` 產生字卡與 `project.json`；再交給 `one-mortal-video-finish` 輸出影片。
+
 ## 交付
 
 交付劇本、必要的鏡頭清單與三項以內的重要製作疑點。若使用者只要改一段台詞或一個場景，直接交付該部分。不要把未生成的影像描述成已完成影片。

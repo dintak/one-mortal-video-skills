@@ -1,0 +1,8 @@
+{
+  "title": "短劇試映",
+  "canvas": {"width": 720, "height": 1280, "fps": 24},
+  "shots": [
+    {"id": "S01", "duration": 3, "scene": "車站月台", "action": "旅人發現遺落的信封", "dialogue": "這封信是誰留下的？"},
+    {"id": "S02", "duration": 3, "scene": "月台長椅", "action": "友人走近並指向信封", "dialogue": "先看看收件人的名字。"}
+  ]
+}

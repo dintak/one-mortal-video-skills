@@ -1,0 +1,14 @@
+{
+  "title": "我的影片",
+  "canvas": { "width": 720, "height": 1280, "fps": 24 },
+  "shots": [
+    { "id": "S01", "duration": 4, "image": "assets/shot01.png", "motion": "push" },
+    { "id": "S02", "duration": 4, "video": "assets/shot02.mp4", "source_start": 0 }
+  ],
+  "audio": [
+    { "file": "assets/voice.wav", "start": 0, "source_start": 0, "gain": 1.0 }
+  ],
+  "subtitles": [
+    { "start": 0.5, "end": 3.5, "text": "第一句字幕" }
+  ]
+}
