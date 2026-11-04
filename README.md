@@ -11,7 +11,13 @@
 
 ## 安裝
 
-把要用的技能資料夾複製到 Codex 的個人技能目錄 `~/.codex/skills/`，再開啟新的對話。每個技能都可以獨立載入；按任務需要搭配使用即可。技能文字不會自行產生模型權重、付費服務額度或素材。
+**使用 Codex 技能安裝器：**在 Codex 對話中輸入：
+
+> 使用 `$skill-installer`，從 `dintak/one-mortal-video-skills` 安裝 `one-mortal-story`、`one-mortal-blocking`、`one-mortal-rap-battle`、`one-mortal-video-finish`。
+
+**手動安裝：**下載 [最新發布包](https://github.com/dintak/one-mortal-video-skills/releases/latest)，解壓後把需要的技能資料夾（各自包含 `SKILL.md`）複製到 Codex 的技能目錄。OpenAI 官方文件列出的使用者目錄是 `~/.agents/skills/`，專案目錄是 `.agents/skills/`；部分 Codex Desktop 安裝使用 `~/.codex/skills/`。依正在使用的 Codex 版本與技能設定選擇位置。完成後開啟新對話。
+
+每個技能都可以獨立載入；按任務需要搭配使用即可。技能文字不會自行產生模型權重、付費服務額度或素材。
 
 ## 使用範例
 
