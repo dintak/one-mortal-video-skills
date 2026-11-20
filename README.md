@@ -8,12 +8,13 @@
 | `one-mortal-blocking` | 規劃角色位置與鏡位 | 場景平面圖、走位與鏡頭連續性紀錄 |
 | `one-mortal-rap-battle` | 設計雙人饒舌對決 | 對決設定、兩方歌詞、音樂與畫面提案 |
 | `one-mortal-video-finish` | 用現有影音素材完成影片 | 試映、成片、字幕、檢查報告 |
+| `mortal-song-video-colab` | 把原創歌曲與歌詞做成角色動態影片 | Colab／ComfyUI 生成、對嘴、SRT、續跑與不公開交付 |
 
 ## 安裝
 
 **使用 Codex 技能安裝器：**在 Codex 對話中輸入：
 
-> 使用 `$skill-installer`，從 `dintak/one-mortal-video-skills` 安裝 `one-mortal-story`、`one-mortal-blocking`、`one-mortal-rap-battle`、`one-mortal-video-finish`。
+> 使用 `$skill-installer`，從 `dintak/one-mortal-video-skills` 安裝 `one-mortal-story`、`one-mortal-blocking`、`one-mortal-rap-battle`、`one-mortal-video-finish`、`mortal-song-video-colab`。
 
 **手動安裝：**下載 [最新發布包](https://github.com/dintak/one-mortal-video-skills/releases/latest)，解壓後把需要的技能資料夾（各自包含 `SKILL.md`）複製到 Codex 的技能目錄。OpenAI 官方文件列出的使用者目錄是 `~/.agents/skills/`，專案目錄是 `.agents/skills/`；部分 Codex Desktop 安裝使用 `~/.codex/skills/`。依正在使用的 Codex 版本與技能設定選擇位置。完成後開啟新對話。
 
@@ -45,6 +46,7 @@ python one-mortal-blocking/scripts/draw_layout.py one-mortal-blocking/templates/
 - 「使用 `one-mortal-blocking`，替這份已定稿劇本安排人物走位與鏡位。」
 - 「使用 `one-mortal-rap-battle`，設計兩位歷史人物的饒舌對決，史實附來源。」
 - 「使用 `one-mortal-video-finish`，用這些已核准的音檔和畫面做試映、字幕及成片。」
+- 「使用 `mortal-song-video-colab`，用這首原創歌和歌詞做免費方案動態對嘴影片；保存續跑檢查點並估算時間。」
 
 ## 執行條件
 
